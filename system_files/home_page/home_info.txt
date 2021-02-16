@@ -7,6 +7,6 @@ The tool consists of three main functionalities, each reachable from one of the 
 - "Run Experiment" for simulating the assembly process within a given input test tube file, and
 - "Visualize Test Tube" for visualizing the content of a test tube at the beginning, middle, or end of an experiment.
 
-You can Download this Software from: https://github.com/Frankie-Spencer/virtual_dna_lab
+You can Download this Software from: https://github.com/Frankie-Spencer/virtual_dna_lab/
 
 You can cite this Software as: TBA
