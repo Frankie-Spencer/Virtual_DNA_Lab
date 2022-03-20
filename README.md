@@ -1,7 +1,7 @@
 # virtual_dna_lab
 
 
-A software tool for visualization and analysis of simulated raw outputs of NFsim simulater 
+A software tool for visualization and analysis of simulated raw outputs of NFsim simulator 
 
 by Michael Sneddon http://michaelsneddon.net/nfsim/.  
 
