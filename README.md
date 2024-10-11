@@ -22,6 +22,8 @@ Instructions:
 
 Download the software package as zip file using 'Download ZIP' and extract files. This software does not require additional installations of dependencies. 
 
+IMPORTANT: If you have installed python already in your system, It is necessary to remove them in order for software package included python interpreter to work properly. 
+
 Software package has embedded the following free and open source tools:
 
     -NFsim_v1.11, http://michaelsneddon.net/nfsim/download/
