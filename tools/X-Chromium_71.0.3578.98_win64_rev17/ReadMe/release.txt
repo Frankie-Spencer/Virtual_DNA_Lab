@@ -1,0 +1,17 @@
+---------------------------------------------------------------------
+winPenPack Project § X-Software collection
+Copyright © 2005-2018 Danilo Leggieri and winPenPack Development Team
+---------------------------------------------------------------------
+
+http://www.winpenpack.com
+winpenpack@gmail.com
+winPenPack License Agreement:
+http://www.winpenpack.com/main/page.php?5
+
+=====================================================================
+X-Chromium 71.0.3578.98 [rev 17]
+Original software Author: The Chromium Authors
+Original software Home: http://www.chromium.org/chromium-projects
+Original software license: BSD License
+X-Software (portable) released on: 30/12/2018
+=====================================================================

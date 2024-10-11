@@ -1,4 +1,9 @@
 import sys
+import os
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, current_dir)
+
 from PySide2.QtCore import (QCoreApplication, QMetaObject, QObject, QPoint,
     QRect, QSize, QUrl, Qt)
 from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
@@ -98,7 +103,7 @@ class Ui_MainWindow(object):
                                         'Click "Yes" if you consent the program to comment out this line\n' +
                                         'Click "No" if you wish to do it manually',
 
-                       'web_browser_get': 'To visualize complexes the program requires Chrome browser.\n'
+                       'web_browser_get': 'To visualize complexes the program requires Chromium browser.\n'
                                           'This program needs to know where chrome.exe installed at first\n' +
                                           '\n' +
                                           'Click "Yes" to navigate to chrome.exe\n'
@@ -124,9 +129,9 @@ class Ui_MainWindow(object):
                 return consent
 
             elif consent_for == 'web_browser_get':
-                self.label_messages.setText('Chrome browser not found ✘')
+                self.label_messages.setText('Chromium browser not found ✘')
 
-                consent_check.setWindowTitle('Provide Chrome browser link')
+                consent_check.setWindowTitle('Provide Chromium browser link')
                 consent_check.setText(con_dic[consent_for])
                 consent_check.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
                 consent = consent_check.exec_()
@@ -612,7 +617,7 @@ class Ui_MainWindow(object):
             browse_des = {run_b_des: [self.lineEdit_run_browse_des, 'Save simulation outputs selected ✔'],
                           visual_b_des: [self.lineEdit_visual_browse_des, 'Save analysis outputs selected ✔']}
 
-            win_heading_and_file_type = {web_browser_loc: ['Navigate to chrome browser', 'Chrome.exe(*.exe)'],
+            win_heading_and_file_type = {web_browser_loc: ['Navigate to Chromium browser', 'Chrome.exe(*.exe)'],
                                          run_b_source: ['Browse test tube', 'Species(*.species)'],
                                          visual_b_source: ['Browse Dump/Species file', 'Dump/Species(*.0 *.species)'],
                                          visual_b_des: 'Save analysis outputs',
@@ -1250,9 +1255,9 @@ class Ui_MainWindow(object):
             dump_dir_path_converted = convert_link_address(dump_info['dump_dir'])
             dump_dir_path_for_rnf = dump_info['dump_dir'] + '/'
 
-            nfsim_pl_path_converted = convert_link_address(local_path + '\\NFsim_v1.11\\bng2.pl')
-            nfsim_exe_path_converted = convert_link_address(local_path + '\\NFsim_v1.11\\bin\\NFsim_MSWin32.exe')
-            perl_path_converted = convert_link_address(local_path + '\\Perl64\\bin\\perl.exe')
+            nfsim_pl_path_converted = convert_link_address(local_path + '\\tools\\NFsim_v1.11\\bng2.pl')
+            nfsim_exe_path_converted = convert_link_address(local_path + '\\tools\\NFsim_v1.11\\bin\\NFsim_MSWin32.exe')
+            perl_path_converted = convert_link_address(local_path + '\\tools\\strawberry-perl-5.30.0.1-64bit-portable\\perl\\bin\\perl.exe')
 
             input_file_bngl = '{}\\{}'.format(input_file_path_raw, input_info['file_name_full'])
             input_file_xml = '{}\\{}'.format(input_file_path_raw, input_info['file_name_xml'])
